@@ -1,8 +1,31 @@
-airflow_venv/
+# Python
 __pycache__/
 *.pyc
-logs/
+*.pyo
+*.pyd
+.venv/
+airflow_venv/
+
+# Airflow
 airflow.db
-tmp/
+airflow.db-shm
+airflow.db-wal
+airflow.cfg
+logs/
+
+# Data
 data/raw/
-*.sqlite
+data/*.db
+output/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.env
+simple_auth_manager_passwords.json.generated
